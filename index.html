@@ -8,36 +8,50 @@
   </head>
   <body>
     <div class="container">
-      <h1>Min ekonomi</h1>
-      <form id="economyForm">
-        <label for="income">Inkomst</label>
-        <input type="number" id="income" required />
-        <div class="outcomes">
-          <label for="outcome">Utgifter</label>
-          <h3>Utgifter</h3>
-          <input type="number" id="outcome" required />
-          <label for="outcome">Utgifter</label>
-          <input type="number" id="outcome" required />
-          <label for="outcome">Utgifter</label>
-          <input type="number" id="outcome" required />
-          <label for="outcome">Utgifter</label>
-          <input type="number" id="outcome" required />
-          <label for="outcome">Utgifter</label>
-          <input type="number" id="outcome" required />
-          <label for="outcome">Utgifter</label>
-          <input type="number" id="outcome" required />
-          <label for="outcome">Utgifter</label>
-          <input type="number" id="outcome" required />
-          <label for="outcome">Utgifter</label>
-          <input type="number" id="outcome" required />
-        </div>
-        <button type="button" onclick="calculateIncome()">
-          Beräkna inkomst
-        </button>
+      <h1>Ekonomi App</h1>
+      <form>
+        <label for="inkomst">Inkomst:</label>
+        <input type="number" id="inkomst" required />
       </form>
-      <div class="result">
-        <button onclick="saveDocument()">Spara som dokument</button>
-      </div>
+      <form id="ekonomiForm">
+        <div class="form-row">
+          
+          
+          <div class="form-column">
+
+            
+            <label for="utgifter">Hyra:</label>
+            <input type="number" id="utgifter" required />
+            <label for="utgifter">El:</label>
+            <input type="number" id="utgifter" required />
+            <label for="utgifter">Bredband:</label>
+            <input type="number" id="utgifter" required />
+            <label for="utgifter">Mobilabonemang:</label>
+            <input type="number" id="utgifter" required />
+            <label for="utgifter">Mat:</label>
+            <input type="number" id="utgifter" required />
+          </div>
+          <div class="form-column">
+            <label for="utgifter">Lån:</label>
+            <input type="number" id="utgifter" required />
+            <label for="utgifter">Lån:</label>
+            <input type="number" id="utgifter" required />
+            <label for="utgifter">Lån:</label>
+            <input type="number" id="utgifter" required />
+            <label for="utgifter">Lån:</label>
+            <input type="number" id="utgifter" required />
+            <label for="utgifter">Lån:</label>
+            <input type="number" id="utgifter" required />
+            <label for="Sparande">Sparande:</label>
+            <input type="number" id="sparande" required />
+            
+           
+          </div>
+        </div>
+        <button type="button" onclick="beraknaEkonomi()">Beräkna</button>
+      </form>
+      <div id="resultat"></div>
+      <button onclick="sparaDokument()">Spara som dokument</button>
     </div>
     <script src="script.js"></script>
   </body>
