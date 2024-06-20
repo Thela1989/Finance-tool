@@ -10,17 +10,3 @@ function calculateResult() {
   //visa resultat
   document.getElementById("result").textContent = "Resultat:" + result + " SEK " + "kvar";
 }
-
-//spara innehållet
-function save() {
-  //hämta innehållet från ID
-  const save = document.getElementById("save").value;
-  //skapa en Blob från innehållet
-
-  const blob = new Blob([save], { type: "text/plain" });
-  const link = document.createElement("a");
-  link.href = URL.createObjectURL(blob);
-  link.download = "document.txt";
-  link.click();
-  URL.revokeObjectURL(link.href);
-}
