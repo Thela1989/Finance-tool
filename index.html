@@ -11,27 +11,27 @@
       <h1>Ekonomi App</h1>
       <form id="ekonomiForm">
         <div class="form-grid">
-          <label for="inkomst">Inkomst:</label>
-          <input type="number" id="inkomst" required />
+          <label for="income">Inkomst:</label>
+          <input class="income" type="number" id="income" required />
 
           <label for="utgift1">Utgift 1:</label>
-          <input type="number" class="utgift" id="utgift1" required />
+          <input type="number" class="expense" id="expense1" required />
 
           <label for="utgift2">Utgift 2:</label>
-          <input type="number" class="utgift" id="utgift2" required />
+          <input type="number" class="expense" id="expense2" required />
 
           <label for="utgift3">Utgift 3:</label>
-          <input type="number" class="utgift" id="utgift3" required />
+          <input type="number" class="expense" id="expense3" required />
 
-          <label for="sparande">Sparande:</label>
-          <input type="number" id="sparande" />
+          <label for="savings">Sparande:</label>
+          <input type="number" id="savings" />
 
-          <label for="skuld">Skuld:</label>
-          <input type="number" id="skuld" />
+          <label for="debt">Skuld:</label>
+          <input type="number" id="debt" />
         </div>
-        <button type="button" onclick="beraknaEkonomi()">Beräkna</button>
+        <button id="result" type="button" onclick="calculateResult()">Beräkna</button>
       </form>
-      <div id="resultat"></div>
+      <div id="save"></div>
       <button onclick="sparaDokument()">Spara som dokument</button>
     </div>
     <script src="script.js"></script>
